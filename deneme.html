@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0px;
+  width: 100%;
+  position: -webkit-sticky; <!-- Menuyu başta bir yere konumlar.Sayfa indikçe yukarı yapıştırır. -->
+  position: sticky;         <!-- Eğer bu özellik olmasın istiyorsak position:fixed yapabiliriz.  -->
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.home {
+  background-color: #4CAF50;
+}
+.active {
+  background-color: #4CAF50;
+}
+li:last-child {
+  border-right: none;
+}
+--------------------------------------------------------------------------------------------
+<ul>
+  <li><a class="home" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
